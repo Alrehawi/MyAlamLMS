@@ -1,0 +1,313 @@
+
+.Gallery{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      box-sizing: border-box;
+      padding-left: 20px;
+      h2{
+        font-size: 35px;
+        margin-top: 0;
+      }
+      .Gallery_Content{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .Gallery_item{
+          box-sizing: border-box;
+          margin: 10px;
+          width: 30%;
+          height: 200px;
+          position: relative;
+          img{
+            width:100% ;
+            height: 200px;
+          }
+          a{
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+            @include transition(0.5);
+            opacity: 1;
+
+            svg{
+              height: 50px;
+              width: 50px;
+              fill: $SecondColor;
+              position: absolute;
+              top: 35%;
+              left: 40%;
+              display: none;
+              @include transition(0.5);
+            }
+            span{
+              color: white;
+              padding: 10px;
+              box-sizing: border-box;
+              position: absolute;
+              bottom: 0;
+              text-align: center;
+              display: block;
+              @include transition(0.5);
+              opacity: 1;
+            }
+          }
+          &:hover{
+            a{
+            opacity: 0.6;
+              svg{
+                display: block;
+              }
+              span{
+                color: $SecondColor;
+              }
+            }
+          }
+        }
+        .button {
+          width: 20%;
+          display: block;
+          padding: 0px;
+          line-height: 40px;
+          height: 40px;
+          text-align: center;
+          background: $SecondColor;
+          font-size: 15px;
+          color: #000;
+          border: 0;
+          border-radius: 3px;
+          margin: 30px auto;
+          cursor: pointer;
+          font-size: 15px;
+          font-weight: 600;
+          @include transition(0.5);
+
+          &:hover {
+            background: #000;
+            color: white;
+            @include transition(0.5);
+          }
+        }
+      }
+
+
+      .hsh{
+        ul{
+          list-style: none;
+        }
+        .lb-album{
+          margin: 0 auto;
+        }
+        .lb-album li{
+          float: left;
+          margin: 5px;
+          position: relative;
+        }
+        .lb-album li > a,
+        .lb-album li > a img{
+          display: block;
+          width: 100%;
+        }
+        .lb-album li > a{
+          width: 150px;
+          height: 150px;
+          position: relative;
+          padding: 10px;
+          background: #eee;
+          -webkit-box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+          -moz-box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+          box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+          -moz-border-radius: 4px;
+          -webkit-border-radius: 4px;
+          border-radius: 4px 4px 4px 4px;
+        }
+        .lb-album li > a span{
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          top: 10px;
+          left: 10px;
+          text-align: center;
+          line-height: 150px;
+          color: rgba(27,54,81,0.8);
+          text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+          font-size: 24px;
+          opacity: 0;
+          filter: alpha(opacity=0); /* internet explorer */
+          -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+          background: rgb(241,210,194);
+          -webkit-transition: opacity 0.3s linear;
+          -moz-transition: opacity 0.3s linear;
+          -o-transition: opacity 0.3s linear;
+          -ms-transition: opacity 0.3s linear;
+          transition: opacity 0.3s linear;
+        }
+        .lb-album li > a:hover span{
+          opacity: 1;
+          filter: alpha(opacity=99); /* internet explorer */
+          -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+        }
+        .lb-overlay{
+          width: 0px;
+          height: 0px;
+          position: fixed;
+          overflow: hidden;
+          left: 0px;
+          top: 0px;
+          padding: 0px;
+          z-index: 99;
+          text-align: center;
+          background: rgb(241,210,194);
+        }
+        .lb-overlay > div{
+          position: relative;
+          color: rgba(27,54,81,0.8);
+          opacity: 0;
+          filter: alpha(opacity=0); /* internet explorer */
+          -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+          width: 550px;
+          margin: 10px auto 0px auto;
+          text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+          -webkit-transition: opacity 0.3s linear 1.3s;
+          -moz-transition: opacity 0.3s linear 1.3s;
+          -o-transition: opacity 0.3s linear 1.3s;
+          -ms-transition: opacity 0.3s linear 1.3s;
+          transition: opacity 0.3s linear 1.3s;
+        }
+        .lb-overlay div h3,
+        .lb-overlay div p{
+          padding: 0px 20px;
+          width: 200px;
+          height: 60px;
+        }
+        .lb-overlay div h3{
+          font-size: 36px;
+          float: left;
+          text-align: right;
+          border-right: 1px solid rgba(27,54,81,0.4);
+        }
+        .lb-overlay div h3 span,
+        .lb-overlay div p{
+          font-size: 16px;
+          font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+          font-style: italic;
+        }
+        .lb-overlay div h3 span{
+          display: block;
+          line-height: 6px;
+        }
+        .lb-overlay div p{
+          text-align: left;
+          float: left;
+          width: 260px;
+        }
+        .lb-overlay a.lb-close{
+          background: rgba(27,54,81,0.8);
+          z-index: 1001;
+          color: #fff;
+          position: absolute;
+          top: 43px;
+          left: 50%;
+          font-size: 15px;
+          line-height: 26px;
+          text-align: center;
+          width: 50px;
+          height: 23px;
+          overflow: hidden;
+          margin-left: -25px;
+          opacity: 0;
+          filter: alpha(opacity=0); /* internet explorer */
+          -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+          -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+          -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+          box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+          -webkit-transition: opacity 0.3s linear 1.2s;
+          -moz-transition: opacity 0.3s linear 1.2s;
+          -o-transition: opacity 0.3s linear 1.2s;
+          -ms-transition: opacity 0.3s linear 1.2s;
+          transition: opacity 0.3s linear 1.2s;
+        }
+        .lb-overlay img{
+          /* height: 100%; For Opera max-height does not seem to work */
+          max-height: 100%;
+          position: relative;
+          -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+          -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+          box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+        }
+        .lb-overlay:target {
+          width: auto;
+          height: auto;
+          bottom: 0px;
+          right: 0px;
+          padding: 80px 100px 120px 100px;
+        }
+        .lb-overlay:target img {
+          -webkit-animation: fadeInScale 1.2s ease-in-out;
+          -moz-animation: fadeInScale 1.2s ease-in-out;
+          -o-animation: fadeInScale 1.2s ease-in-out;
+          -ms-animation: fadeInScale 1.2s ease-in-out;
+          animation: fadeInScale 1.2s ease-in-out;
+        }
+        .lb-overlay:target a.lb-close,
+        .lb-overlay:target > div{
+          opacity: 1;
+          filter: alpha(opacity=99); /* internet explorer */
+          -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+        }
+        @-webkit-keyframes fadeInScale {
+          0% { -webkit-transform: scale(0.6); opacity: 0; }
+          100% { -webkit-transform: scale(1); opacity: 1; }
+        }
+        @-moz-keyframes fadeInScale {
+          0% { -moz-transform: scale(0.6); opacity: 0; }
+          100% { -moz-transform: scale(1); opacity: 1; }
+        }
+        @-o-keyframes fadeInScale {
+          0% { -o-transform: scale(0.6); opacity: 0; }
+          100% { -o-transform: scale(1); opacity: 1; }
+        }
+        @-ms-keyframes fadeInScale {
+          0% { -ms-transform: scale(0.6); opacity: 0; }
+          100% { -ms-transform: scale(1); opacity: 1; }
+        }
+        @keyframes fadeInScale {
+          0% { transform: scale(0.6); opacity: 0; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 551px) and (max-width: 767px) {
+  .Gallery{
+    .Common_content{
+      .right{
+        .Gallery_Content{
+          .Gallery_item{
+            margin: 10px auto;
+            width: 45%;
+          }
+          .button{
+            width: 40%;
+          }
+        }
+
+      }
+    }
+  }
+}

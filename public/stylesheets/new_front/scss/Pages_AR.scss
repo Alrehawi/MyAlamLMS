@@ -1,0 +1,490 @@
+
+@import "HeaderFooter_AR";
+/*----------Home Pages-------------*/
+
+/*********Slider*****/
+.slider{
+  #owl-demo {
+    .item{
+      div{
+        .slider_content{
+          direction: rtl;
+          h2{
+            padding-right: 0;
+          }
+          p{
+
+          }
+          .Read{
+            a{
+              p{
+                margin: 6px 0 0 10px;
+              }
+              svg{
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+/*******About********/
+.about{
+  .container{
+    .left{
+      direction: rtl;
+      order: 2;
+    }
+    .right{
+      direction: rtl;
+      order: 1;
+    }
+  }
+}
+/********News********/
+.news{
+  .container{
+    .news_content{
+      flex-direction: row-reverse;
+      .left{
+        direction: rtl;
+        @extend .CommonBar;
+      }
+      .right{
+        .right_head{
+          display: flex;
+          flex-direction: row-reverse;
+          p{
+            text-align: right;
+          }
+          .Read_More{
+            text-align: left;
+          }
+        }
+        .right_content{
+          direction: rtl;
+        }
+        .right_Events{
+          direction: rtl;
+          .Events{
+            .calender{
+              margin-right: 0;
+              margin-left: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/******contact*******/
+.contact{
+  .container{
+    direction: rtl;
+    .contact_info{
+      .subscribe{
+        p{
+          padding-right: 0;
+          padding-left: 50px;
+        }
+        form{
+          input{
+            padding: 17px 20px 17px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*----------Internal Pages-------------*/
+/*Common*/
+.Common_content{
+  direction: rtl;
+  .left{  /*commonBar*/
+    @extend .CommonBar;
+  }
+  .right{
+    padding-left: 0;
+    padding-right: 20px;
+    box-sizing: border-box;
+    h2{
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+}
+/*Internal*/
+.Beliefs {
+  .container{
+    .Common_content{
+      .right{
+        ul{
+          margin: 60px 0px ;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+.AboutSchools{
+  .container{
+    .Common_content{
+      .right{
+        div{
+          margin: 60px 0;
+        }
+      }
+    }
+  }
+}
+.Systems{
+  .container{
+    .Common_content{
+      .right{
+        div{
+          margin: 60px 0;
+        }
+      }
+    }
+  }
+}
+.Registration{
+  .Common_content{
+    .right{
+      ul{
+        margin: 60px 0 ;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+.Careers{
+  .Common_content{
+    .right{
+      .Jobs{
+        .Jobs_item{
+          padding: 40px 20px 10px 10px;
+          .ApplyNow{
+            button{
+              margin: 10px 75% 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.Trainings{
+  .Common_content{
+    .right{
+      .TrainingsContent{
+        ul{
+          margin: 60px 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+.Login {
+  direction: rtl;
+  .checkbox-input {
+    .custom-checkbox{
+      margin-right: 0;
+      margin-left: 5px;
+    }
+    input {
+      float: right;
+    }
+    label {
+      float: right;
+    }
+  }
+  .forget-pass {
+    float: left;
+  }
+}
+.File{
+  .Common_content{
+    .right{
+      ul{
+        margin: 20px 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+.ContactUs{
+  .Common_content{
+    direction: rtl;
+     .Contact_right{
+       padding-left: 0;
+       padding-right: 60px;
+       ul{
+         padding-right: 0;
+         li{
+           display: flex;
+         }
+       }
+       .social ul {
+         float: right;
+         li{
+           a{
+             svg{
+               float: right;
+             }
+           }
+         }
+       }
+       .Remove{
+         clear: right;
+       }
+       form{
+         margin: 16px auto 0 auto;
+       }
+     }
+
+
+  }
+}
+.Library{
+  .Common_content{
+    .right{
+      .Library-data{
+        ul{
+          padding-right: 0;
+        }
+        .Lib_content {
+          .Lib_item input{
+            padding-right: 10px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.Video {
+  .Common_content {
+    .right {
+      ul{
+        padding-left: 0;
+      }
+      .lb-album {
+        padding-right: 0;
+        li{
+          float: right;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.GalleryDetails {
+  .Common_content {
+    .right{
+      .lb-album{
+        padding-right: 0;
+        li{
+          float: right;
+        }
+      }
+    }
+  }
+}
+.Events {
+  .Common_content {
+    .right {
+      .right_Events {
+        .Events {
+          .calender_details{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.Eventdetails {
+  .Common_content {
+    .right {
+      .details {
+        margin-left: 0;
+        margin-right: 0;
+        .EventContent {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+.News-details {
+  .Common_content {
+    .right {
+      .blog-details {
+        .middle{
+          padding-right: 0;
+          padding-left: 20px;
+          .about-art{
+            .info {
+              float: right;
+              ul {
+                padding-right: 0;
+                li svg{
+                  margin-right: 0;
+                  margin-left: 5px;
+                }
+              }
+            }
+            .share{
+              float: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.Partnership{
+  .Common_content{
+    .right{
+      ul{
+        margin: 10px 0 ;
+        padding-right: 0;
+      }
+    }
+  }
+}
+.Distinguished {
+  .Common_content {
+    .right {
+      .details {
+        .EventContent {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+.Survey {
+  .Common_content {
+    .right ul{
+      padding-right: 0;
+      li{
+        ul{
+          padding-right: 20px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+  /*Mobile*/
+  @media (min-width: 190px) and (max-width: 551px) {
+    /*header*/
+    .header {
+      .right {
+        .login {
+        .upper div p{
+          margin-right: 5px;
+          margin-left: 2px;
+          font-size: 10px;
+          }
+        }
+      }
+    }
+    /*Predcramp*/
+    .predcramp{
+      ul{
+        li{
+          margin-left: 5px;
+        }
+      }
+    }
+    /*Common*/
+    .Common_content{
+      .right{
+        padding-right: 0;
+      }
+    }
+    /*Careers*/
+    .Careers{
+      .Common_content{
+        .right{
+          .Jobs{
+            .Jobs_item{
+              .ApplyNow{
+                button{
+                  margin: 10px 50% 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*contact us*/
+    .ContactUs{
+      .Common_content{
+        .Contact_right{
+          padding-right: 0;
+        }
+      }
+    }
+    /*Library*/
+    .Library{
+      .Common_content{
+        .right{
+          .Library-data{
+            .Lib_content {
+              .Lib_item input{
+                width: 90%;
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

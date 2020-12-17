@@ -1,0 +1,193 @@
+.CommonBar{
+  flex: 0.95;
+  margin-right: 25px;
+  h2{
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .Graduate{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction:column;
+    padding: 5px ;
+    .Graduate_item{
+      display: inline-flex;
+      position: relative;
+      margin: 10px 10px 0 10px;
+      &:last-child{
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      a{
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+      }
+      .Graduate_person{
+        position: relative;
+        .Graduate_overlay{
+          height: 100px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          background-color: rgba(40, 36, 63, 0.2);
+          @include transition(0.5);
+        }
+        img{
+          flex:1;
+          max-width:100px;
+          min-height: 100px;
+        }
+      }
+      p{
+        flex: 1;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.5em;
+        padding: 0  0 0 15px;
+        margin: 0 auto;
+        @include transition(0.5);
+      }
+      &:hover{
+        p{
+          color: $SecondColor;
+        }
+        .Graduate_person{
+          .Graduate_overlay{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .E-Learing{
+    @include background("E-Service.jpg","","");
+    width: 100%;
+    margin: 30px auto;
+    .transparent{
+      background-color: rgba(40, 36, 63, 0.6);
+      height: 150px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      a{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      @include transition(0.5);
+      &:hover{
+        background-color: rgba(40, 36, 63, 0.2);
+      }
+    }
+  }
+  .twitter{
+    .Twitter_Header{
+      display: flex;
+      align-items: center;
+      border-top: 1px solid rgba(15,70,100,.12); ;
+      p{
+        flex: 1;
+        margin: 10px 0 10px 2px;
+        font-weight: 700;
+      }
+      .Follow{
+        flex: 1;
+        text-align: right;
+      }
+    }
+    /* .TimeLine{
+       height: 542px;
+     }*/
+    .twitter-timeline {
+      height: 350px !important;
+    }
+  }
+}
+
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /********CommonBar*******/
+  .CommonBar{
+    .Graduate{
+      .Graduate_item{
+        margin: 10px 0 0 0;
+        p{
+          font-size: 12px;
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+  }
+}
+/*tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /********CommonBar*******/
+  .CommonBar{
+    h2 {
+      font-size: 25px;
+    }
+    .Graduate {
+      .Graduate_item {
+        margin: 10px 0 0 0;
+        .Graduate_person {
+          .Graduate_overlay {
+            height:75px;
+          }
+          img {
+            max-width: 75px;
+            min-height: 75px;
+          }
+        }
+        p {
+          font-size: 10px;
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+  }
+}
+/*small_Tablet*/
+@media (min-width: 551px) and (max-width: 767px) {
+  /********News*******/
+  .CommonBar{
+    flex: 0.8;
+    h2 {
+      font-size: 25px;
+    }
+    .Graduate {
+      .Graduate_item {
+        margin: 10px 0 0 0;
+        .Graduate_person {
+          .Graduate_overlay {
+            height:75px;
+          }
+          img {
+            max-width: 75px;
+            min-height: 75px;
+          }
+        }
+        p {
+          font-size: 10px;
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+  }
+}
+
+/*small_Tablet*/
+@media  (max-width: 551px) {
+  /********News*******/
+  .CommonBar{
+    display: none;
+  }
+}

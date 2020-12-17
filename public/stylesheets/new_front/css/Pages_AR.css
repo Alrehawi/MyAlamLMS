@@ -1,0 +1,409 @@
+/*---------Layout--------------*/
+@import url("https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900");
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+/*----------Header------------*/
+.header .left {
+  order: 2;
+}
+.header .right {
+  order: 1;
+  text-align: left;
+}
+.header .right .login .upper {
+  display: flex;
+}
+.header .right .login .upper div {
+  flex-direction: row-reverse;
+}
+.header .right .login .upper div:first-of-type {
+  order: 2;
+}
+.header .right .login .upper div:last-of-type {
+  order: 1;
+}
+.header .right .login .upper div p {
+  margin-left: 15px;
+  margin-right: 7px;
+}
+.header .right .login .LoginButton a {
+  font-family: 'Cairo', sans-serif;
+}
+.header .right .search {
+  flex-direction: row-reverse;
+}
+.header .right .search input.SearchInput {
+  direction: rtl;
+  border-right: 1px solid #e1e1e1;
+  border-left: none;
+}
+.header .right .search .icon .SearchIcon {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  left: 0;
+}
+
+/*----------Nav------------*/
+.content .nav-menu {
+  flex-direction: row-reverse;
+}
+.content .nav-menu li {
+  border-right: none;
+  border-left: 1px solid #0a9fd8;
+}
+.content .nav-menu li a {
+  text-align: right;
+}
+.content .nav-menu li ul li {
+  border-left: none;
+}
+.content .nav-menu li:last-child {
+  border-left: none;
+}
+
+.navigation-portrait .submenu-indicator {
+  left: 0;
+  right: auto;
+}
+
+@media (min-width: 768px) {
+  .submenu-indicator {
+    float: left;
+    margin-left: 0;
+    margin-right: 6px;
+    margin-top: 10px;
+  }
+
+  .nav-dropdown .submenu-indicator {
+    right: auto;
+    left: 15px;
+    transform: rotate(180deg);
+  }
+
+  .nav-dropdown .nav-dropdown {
+    left: auto;
+    right: 100%;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .content .nav-menu li a {
+    font-size: 10px;
+  }
+}
+/*----------PredCramp------------*/
+.predcramp {
+  direction: rtl;
+}
+.predcramp ul {
+  padding-right: 0;
+}
+.predcramp ul li {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/*----------CommonBar-------------*/
+.CommonBar, .news .container .news_content .left, .Common_content .left {
+  /*commonBar*/
+  margin-right: 0;
+  margin-left: 25px;
+}
+.CommonBar .Graduate .Graduate_item p, .news .container .news_content .left .Graduate .Graduate_item p, .Common_content .left .Graduate .Graduate_item p {
+  padding: 0 15px 0 0 !important;
+}
+.CommonBar .twitter .Twitter_Header .Follow, .news .container .news_content .left .twitter .Twitter_Header .Follow, .Common_content .left .twitter .Twitter_Header .Follow {
+  text-align: left !important;
+}
+
+/*----------Footer-------------*/
+footer .container {
+  direction: rtl;
+}
+footer .container .Footer_details .Footer_Links .Footer_item ul {
+  padding-right: 0;
+}
+footer .container .Footer_details .Footer_Links .Footer_item ul li {
+  padding-right: 0;
+  padding-left: 20px;
+}
+footer .container .Footer_details .Footer_Links .Footer_item ul li a img {
+  margin-left: 0;
+  margin-right: -10px;
+}
+
+/*----------Home Pages-------------*/
+/*********Slider*****/
+.slider #owl-demo .item div .slider_content {
+  direction: rtl;
+}
+.slider #owl-demo .item div .slider_content h2 {
+  padding-right: 0;
+}
+.slider #owl-demo .item div .slider_content .Read a p {
+  margin: 6px 0 0 10px;
+}
+.slider #owl-demo .item div .slider_content .Read a svg {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/*******About********/
+.about .container .left {
+  direction: rtl;
+  order: 2;
+}
+.about .container .right {
+  direction: rtl;
+  order: 1;
+}
+
+/********News********/
+.news .container .news_content {
+  flex-direction: row-reverse;
+}
+.news .container .news_content .left {
+  direction: rtl;
+}
+.news .container .news_content .right .right_head {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.news .container .news_content .right .right_head p {
+  text-align: right;
+}
+.news .container .news_content .right .right_head .Read_More {
+  text-align: left;
+}
+.news .container .news_content .right .right_content {
+  direction: rtl;
+}
+.news .container .news_content .right .right_Events {
+  direction: rtl;
+}
+.news .container .news_content .right .right_Events .Events .calender {
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+/******contact*******/
+.contact .container {
+  direction: rtl;
+}
+.contact .container .contact_info .subscribe p {
+  padding-right: 0;
+  padding-left: 50px;
+}
+.contact .container .contact_info .subscribe form input {
+  padding: 17px 20px 17px 0;
+}
+
+/*----------Internal Pages-------------*/
+/*Common*/
+.Common_content {
+  direction: rtl;
+}
+.Common_content .left {
+  /*commonBar*/
+}
+.Common_content .right {
+  padding-left: 0;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.Common_content .right h2 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/*Internal*/
+.Beliefs .container .Common_content .right ul {
+  margin: 60px 0px;
+  padding-right: 0;
+}
+
+.AboutSchools .container .Common_content .right div {
+  margin: 60px 0;
+}
+
+.Systems .container .Common_content .right div {
+  margin: 60px 0;
+}
+
+.Registration .Common_content .right ul {
+  margin: 60px 0;
+  padding-right: 20px;
+}
+
+.Careers .Common_content .right .Jobs .Jobs_item {
+  padding: 40px 20px 10px 10px;
+}
+.Careers .Common_content .right .Jobs .Jobs_item .ApplyNow button {
+  margin: 10px 75% 0 0;
+}
+
+.Trainings .Common_content .right .TrainingsContent ul {
+  margin: 60px 0;
+  padding-right: 0;
+}
+
+.Login {
+  direction: rtl;
+}
+.Login .checkbox-input .custom-checkbox {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.Login .checkbox-input input {
+  float: right;
+}
+.Login .checkbox-input label {
+  float: right;
+}
+.Login .forget-pass {
+  float: left;
+}
+
+.File .Common_content .right ul {
+  margin: 20px 0;
+  padding-right: 0;
+}
+
+.ContactUs .Common_content {
+  direction: rtl;
+}
+.ContactUs .Common_content .Contact_right {
+  padding-left: 0;
+  padding-right: 60px;
+}
+.ContactUs .Common_content .Contact_right ul {
+  padding-right: 0;
+}
+.ContactUs .Common_content .Contact_right ul li {
+  display: flex;
+}
+.ContactUs .Common_content .Contact_right .social ul {
+  float: right;
+}
+.ContactUs .Common_content .Contact_right .social ul li a svg {
+  float: right;
+}
+.ContactUs .Common_content .Contact_right .Remove {
+  clear: right;
+}
+.ContactUs .Common_content .Contact_right form {
+  margin: 16px auto 0 auto;
+}
+
+.Library .Common_content .right .Library-data ul {
+  padding-right: 0;
+}
+.Library .Common_content .right .Library-data .Lib_content .Lib_item input {
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.Video .Common_content .right ul {
+  padding-left: 0;
+}
+.Video .Common_content .right .lb-album {
+  padding-right: 0;
+}
+.Video .Common_content .right .lb-album li {
+  float: right;
+}
+
+.GalleryDetails .Common_content .right .lb-album {
+  padding-right: 0;
+}
+.GalleryDetails .Common_content .right .lb-album li {
+  float: right;
+}
+
+.Events .Common_content .right .right_Events .Events .calender_details {
+  margin-right: 0;
+}
+
+.Eventdetails .Common_content .right .details {
+  margin-left: 0;
+  margin-right: 0;
+}
+.Eventdetails .Common_content .right .details .EventContent {
+  padding-right: 0;
+}
+
+.News-details .Common_content .right .blog-details .middle {
+  padding-right: 0;
+  padding-left: 20px;
+}
+.News-details .Common_content .right .blog-details .middle .about-art .info {
+  float: right;
+}
+.News-details .Common_content .right .blog-details .middle .about-art .info ul {
+  padding-right: 0;
+}
+.News-details .Common_content .right .blog-details .middle .about-art .info ul li svg {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.News-details .Common_content .right .blog-details .middle .about-art .share {
+  float: left;
+}
+
+.Partnership .Common_content .right ul {
+  margin: 10px 0;
+  padding-right: 0;
+}
+
+.Distinguished .Common_content .right .details .EventContent {
+  padding-right: 0;
+}
+
+.Survey .Common_content .right ul {
+  padding-right: 0;
+}
+.Survey .Common_content .right ul li ul {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+/*Mobile*/
+@media (min-width: 190px) and (max-width: 551px) {
+  /*header*/
+  .header .right .login .upper div p {
+    margin-right: 5px;
+    margin-left: 2px;
+    font-size: 10px;
+  }
+
+  /*Predcramp*/
+  .predcramp ul li {
+    margin-left: 5px;
+  }
+
+  /*Common*/
+  .Common_content .right {
+    padding-right: 0;
+  }
+
+  /*Careers*/
+  .Careers .Common_content .right .Jobs .Jobs_item .ApplyNow button {
+    margin: 10px 50% 0 0;
+  }
+
+  /*contact us*/
+  .ContactUs .Common_content .Contact_right {
+    padding-right: 0;
+  }
+
+  /*Library*/
+  .Library .Common_content .right .Library-data .Lib_content .Lib_item input {
+    width: 90%;
+    margin-left: 0;
+  }
+}

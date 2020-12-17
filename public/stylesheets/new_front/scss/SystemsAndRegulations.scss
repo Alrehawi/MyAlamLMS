@@ -1,0 +1,50 @@
+.Systems{
+  .container{
+    .Common_content{
+      display: flex;
+      .left{
+        @extend .CommonBar;
+      }
+      .right{
+        flex: 3;
+        h2{
+          font-size: 35px;
+          margin-left: 20px;
+          margin-top: 0;
+        }
+        div{
+          margin: 60px 20px;
+          color: #818181;
+          font-size: 15px;
+          line-height: 2em;
+          span{
+            color: $FirstColor;
+            margin-left: 0;
+            font-size: 17px;
+            font-weight: 600;
+          }
+          p{
+            color: black;
+            font-weight: 600;
+          }
+
+          ul{
+            li{
+              margin: 20px auto;
+              span{
+                color: black;
+                font-size: 14px;
+              }
+            }
+          }
+          .Color{
+            color: $SecondColor;
+          }
+          .GrayColor{
+            color: #818181;
+          }
+        }
+      }
+    }
+  }
+}

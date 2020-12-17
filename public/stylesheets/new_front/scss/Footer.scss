@@ -1,0 +1,93 @@
+footer{
+  background-color: #1c2738;
+  .container{
+    .Footer_details{
+      h3{
+        color: white;
+        font-size: 27px;
+        font-weight: 600;
+        margin: 15px auto;
+      }
+      .Footer_Links{
+        display: flex;
+        .Footer_item{
+          flex: 1;
+          ul{
+            padding-left: 0;
+            li{
+              list-style: none;
+              font-size: 14px;
+              font-weight: 400;
+              margin: 15px auto;
+              padding-right: 20px;
+              span{
+                color: $SecondColor ;
+                font-weight: 600;
+              }
+              a{
+                color: #738299;
+                @include transition(0.5);
+                &:hover{
+                  color: white;
+                }
+                img {
+                  height:40px
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Flogo{
+    background-color: white;
+    .FooterLogo{
+      display: inline-flex;
+      width: 100%;
+      justify-content: space-evenly;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+  }
+
+  .CopyRight{
+    background-color: #141d2c;
+    text-align: center;
+    p{
+      margin: 0 auto;
+      padding: 25px 0;
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
+
+
+/*small_Tablet*/
+@media (min-width: 551px) and (max-width: 767px) {
+  footer{
+    .container{
+      .Footer_details{
+        .Footer_Links{
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .Footer_item{
+            flex: inherit;
+            width: 30%;
+            ul{
+              li{
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .CopyRight{
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+}

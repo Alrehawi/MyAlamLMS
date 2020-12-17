@@ -1,0 +1,74 @@
+.StudyFees{
+  box-sizing: border-box;
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      box-sizing: border-box;
+      padding-left: 20px;
+      h2{
+        font-size: 35px;
+        margin-top: 0;
+      }
+      h4{
+        font-size: 18px;
+        color: $SecondColor;
+        margin-top: 60px;
+      }
+      table {
+        border-collapse: collapse;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+        th {
+          background-color: $FirstColor;
+          color: white;
+        }
+        th, td {
+          text-align: center;
+          padding: 15px;
+        }
+        tr:nth-child(even){background-color: #f2f2f2}
+      }
+      .AdditionalFees{
+        margin: 0 ;
+        ul{
+          list-style: none;
+          margin: 30px 0 ;
+          padding-left:0 ;
+          line-height: 1.5em;
+          li{
+            margin: 30px 0 0 0;
+            font-size: 14px;
+            p{
+              color: $SecondColor;
+              font-weight: 600;
+            }
+            ul{
+              list-style: circle;
+              padding-left: 20px;
+              li{
+                margin: 20px 0;
+              }
+            }
+          }
+        }
+        .end{
+          text-align: center;
+          font-weight: 600;
+          margin: 50px auto;
+        }
+        h5{
+          color: $FirstColor;
+          text-align: right;
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+}

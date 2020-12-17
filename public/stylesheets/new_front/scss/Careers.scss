@@ -1,0 +1,88 @@
+.Careers{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      box-sizing: border-box;
+      padding-left: 20px;
+      h2{
+        font-size: 35px;
+        margin-top: 0;
+      }
+      .Jobs{
+        .Jobs_item{
+          box-sizing: border-box;
+          width: 100%;
+          margin: 40px auto;
+          padding: 40px 10px 10px 20px;
+          box-shadow: 3.5px 6px 25px 0 rgba(0, 0, 0, 0.1);
+          @include transition(0.5);
+          h3{
+            color: $FirstColor;
+            @include transition(0.5);
+            margin-top: 0;
+          }
+          p{
+            color: $FirstColor;
+            svg{
+              height: 12px;
+              width: 15px;
+              fill: $FirstColor;
+              cursor: pointer;
+            }
+            .Down{
+              display: none;
+            }
+            span{
+              margin: 0;
+              font-size: 15px;
+            }
+          }
+
+          .Job_Details{
+            display: none;
+            font-size: 13px;
+            color: $FirstColor;
+          }
+          .ApplyNow{
+            width: 100%;
+            button{
+              display: block;
+              width: 25%;
+              margin: 10px 0 0 75%;
+              box-sizing: border-box;
+              border: 1px solid #F6F6F6;
+              border-radius:3px ;
+              background-color: $SecondColor;
+              @include transition(0.5);
+              a{
+                display: block;
+                padding: 15px 0;
+                font-size: 15px;
+                font-weight: 700;
+                color: black;
+                @include transition(0.5);
+              }
+              &:hover{
+                background-color: black;
+                a{
+                  color: white;
+                }
+              }
+            }
+          }
+
+          &:hover{
+            h3{
+              color: $SecondColor;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

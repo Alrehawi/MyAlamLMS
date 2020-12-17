@@ -1,0 +1,63 @@
+.Registration{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      h2{
+        font-size: 35px;
+        margin-top: 0;
+        margin-left: 20px;
+      }
+      ul{
+        margin: 60px 20px ;
+        padding-left: 20px;
+        li{
+          list-style: square;
+          color: #818181;
+          margin: 30px auto;
+          font-size: 15px;
+          p{
+            color: $FirstColor;
+            font-weight: 600;
+          }
+          ul{
+            margin: 40px 20px;
+            li{
+              list-style: circle;
+            }
+          }
+        }
+      }
+      .Register{
+        button{
+          display: block;
+          width: 30%;
+          margin: 0 auto;
+          box-sizing: border-box;
+          border: 1px solid #F6F6F6;
+          border-radius:3px ;
+          background-color: $SecondColor;
+          @include transition(0.5);
+          a{
+            display: block;
+            padding: 17px 0;
+            font-size: 15px;
+            font-weight: 700;
+            color: black;
+            @include transition(0.5);
+          }
+          &:hover{
+            background-color: black;
+            a{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

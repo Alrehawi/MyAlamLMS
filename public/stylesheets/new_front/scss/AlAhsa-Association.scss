@@ -1,0 +1,48 @@
+
+.AlAhsa-Association{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      display: flex;
+      h2{
+        font-size: 35px;
+        margin-top: 0;
+      }
+      ul{
+        order: 1;
+        width: 80%;
+        margin: 10px 20px ;
+        padding-left: 0;
+        li{
+          color: #818181;
+          list-style: none;
+          margin: 50px auto;
+          font-size: 15px;
+          line-height: 2em;
+        }
+      }
+      .Partner{
+        order: 2;
+        width: 20%;
+        margin-top: 110px;
+        position: relative;
+        img{
+          width: 100%;
+        }
+        a{
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
+      }
+
+
+    }
+  }
+}

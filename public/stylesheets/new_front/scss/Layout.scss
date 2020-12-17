@@ -1,0 +1,99 @@
+/*-----------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900");
+$FirstColor:#00adef;
+$SecondColor:#ffc702;
+$CalenderColor:#2682d4;
+$PrimaryFont:'Open Sans', sans-serif;
+
+@mixin transition($val){
+  -webkit-transition: all #{$val}s ease-in;
+  -moz-transition: all #{$val}s ease-in;
+  -o-transition: all #{$val}s ease-in;
+  transition: all #{$val}s ease-in;
+}
+
+@mixin customButton($bgColor,$color,$BorderR,$paddingA,$paddingB,$marginA,$marginB){
+  background-color: $bgColor;
+  border: 0;
+  color: $color;
+  border-radius: #{$BorderR}px;
+  padding: #{$paddingA}px #{$paddingB}px ;
+  margin:#{$marginA}px #{$marginB}px;
+}
+@mixin background($img,$fix,$high){
+  background: url("../images/#{$img}")no-repeat center center #{$fix} ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: #{$high}px;
+  width: 100%;
+}
+@mixin Gradient($deg,$color1,$color2,$h){
+  background: transparent; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($deg,$color1, $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($deg,$color1, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($deg,$color1, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($deg,$color1, $color2); /* Standard syntax */
+  min-height: #{$h}px;
+}
+@mixin Placeholder($HolderColor){
+  &::-webkit-input-placeholder {
+    color: $HolderColor !important;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $HolderColor !important;
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: $HolderColor !important;
+  }
+  &:-ms-input-placeholder {
+    color: $HolderColor !important;
+  }
+}
+
+.Hover{
+  background-color: #000;
+  color: white;
+}
+
+button{
+  outline:0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+input:focus, input:active {
+  outline: 0;
+}
+body{
+  box-sizing: border-box;
+  font-family: $PrimaryFont;
+  overflow-x:hidden;
+}
+.Big_container{
+  min-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+.padding{
+  padding: 55px 0;
+}
+
+@media (min-width: 551px) and (max-width: 1199px) {
+  .container{
+    width: 100%;
+  }
+}
+@media (max-width: 551px) {
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+}

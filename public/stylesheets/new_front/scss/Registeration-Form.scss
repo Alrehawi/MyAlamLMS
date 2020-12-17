@@ -1,0 +1,74 @@
+.Registration-Form{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      h2{
+        font-size: 25px;
+        width: 80%;
+        margin: 0 auto 20px auto;
+      }
+      form{
+        width: 80%;
+        margin: 60px auto 0 auto ;
+        legend{
+          color: $SecondColor;
+          margin: 30px 0 5px 0;
+        }
+        hr{
+          height:1px;
+          background-color: #818181;
+          width: 160px;
+          border: 0;
+          margin: 0;
+        }
+        .FormDiv{
+          margin: 30px 0;
+          label{
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 10px 0;
+          }
+          input , select {
+            box-sizing: border-box;
+            outline: none;
+            width: 100%;
+            display: block;
+            height: 40px;
+            padding-left: 10px;
+            border: 1px solid #eee;
+            border-radius:3px ;
+            @include transition(0.5);
+            &:focus,&:active{
+              border-color: $SecondColor;
+            }
+          }
+          .ButtonRegister{
+            display: block;
+            width: 35%;
+            height: 45px;
+            margin: 0 auto;
+            margin-top: 60px;
+            box-sizing: border-box;
+            border: 1px solid #F6F6F6;
+            border-radius:3px ;
+            background-color: $SecondColor;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            @include transition(0.5);
+            &:hover{
+              background-color: black;
+              color: white;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@charset "utf-8";
+body{ background: none;font: 14px/25px 'Arial';overflow:hidden;}
+#header{ background: none;}
+/*middle part*/
+.midpart{display: none;}
+.top_part{display: none;}
+.left_part{display: none;}
+.right_part{display: none;}
+.bottom{ clear:both;width:100%;display: none;}
+#header .languages{display:none;}
+.links {display:none;}
+#searchs{display:none;}
+.comment{display:none;}
+#footer{display: none;}

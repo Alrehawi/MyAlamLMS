@@ -1,0 +1,56 @@
+
+.TeacherModels{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      h2{
+        font-size: 35px;
+        margin-left: 20px ;
+        margin-top: 0;
+      }
+      .Models{
+        .Models_item{
+          margin-top: 60px;
+          box-shadow: 3.5px 6px 25px 0 rgba(0, 0, 0, 0.1);
+          @include transition(0.5);
+          display: flex;
+          p{
+            width: 75%;
+            float: left;
+
+          }
+          button{
+            float: right;
+            display: block;
+            width: 25%;
+            box-sizing: border-box;
+            border: 1px solid #F6F6F6;
+            border-radius:3px ;
+            background-color: $SecondColor;
+            @include transition(0.5);
+            a{
+              display: block;
+              padding: 15px 0;
+              font-size: 15px;
+              font-weight: 700;
+              color: black;
+              @include transition(0.5);
+            }
+            &:hover{
+              background-color: black;
+              a{
+                color: white;
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+}

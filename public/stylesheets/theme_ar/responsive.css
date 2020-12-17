@@ -1,0 +1,162 @@
+@media (max-width:369px) {}
+
+@media (max-width:1200px) {
+    .projects:before {
+        height: 80%;
+    }
+}
+
+@media (max-width:767px) {
+
+    .mainNavbar.navbar-default .navbar-nav>li>a,
+    .mainNavbar.navbar-default .navbar-nav>li>a.active {
+        border: 0;
+        border-bottom: 1px solid #ddd
+    }
+
+    .mainNavbar.navbar-default .navbar-nav>li:hover a {
+        border-color: #ddd
+    }
+
+    .mainNavbar.navbar-default .navbar-nav>li:last-child a {
+        border-color: transparent
+    }
+
+    .formSearch .navbar-nav {
+        margin: 0;
+        float: left;
+    }
+
+    nav .navbar-nav {
+        margin: 0;
+    }
+
+    .navs.navbar-nav li a {
+        padding-top: 2px;
+        padding-bottom: 0
+    }
+
+    nav .navs.navbar-nav {
+        margin-bottom: 5px;
+        text-align: center
+    }
+
+    .projects:before {
+        height: 90%;
+    }
+
+    .dropdown-menu>li ul.dropdown-menu {
+        top: 0;
+        margin-right: 10px;
+        
+ 
+    } 
+    /* updates */
+    .navbar-nav .dropdown-menu {
+        position: static;
+    }
+    .navbar-default .navbar-collapse {
+        position: relative;
+        right: -500px;
+    }
+    
+    /* updates */
+}
+
+@media (max-width:991px) {
+    .projects{
+        z-index: 50;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .navs.navbar-nav>li {
+        margin-left: 5px
+    }
+
+    .logo {
+        width: 120px
+    }
+
+    .mainNavbar .mainNav {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .col-xs-6,
+    .col-xs-4,
+    .col-xs-8 {
+        width: 100%;
+    }
+
+    footer .formSearch {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px
+    }
+}
+
+@media (max-width: 992px) {
+    .mainNavbar .mainNav {
+        margin-top: 0;
+    }
+
+    .mainNavbar.navbar-default {
+        background: transparent
+    }
+}
+
+@media (min-width:767px) and (max-width:992px) {
+
+    .container>.navbar-header,
+    .container>.navbar-collapse {
+        position: relative
+    }
+
+    .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .navbar-toggle {
+        margin-left: 0;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-header {
+        float: none
+    }
+
+    .navs {
+        margin-top: 2px;
+        margin-right: 0;
+    }
+
+    .navbar-nav {
+        border-top: 0;
+        position: relative;
+        z-index: 99;
+    }
+
+    .navs.navbar-nav>li>a {
+        margin-left: 0;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .navs.navbar-nav>li:last-child a {
+        border: 0;
+    }
+}
+
+@media (min-width:992px) {
+    header .nav-justified>li:hover>ul {
+        display: block;
+    }
+}

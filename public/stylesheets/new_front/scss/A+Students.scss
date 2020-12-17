@@ -1,0 +1,53 @@
+.AStudents{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      box-sizing: border-box;
+      padding-left: 20px;
+      h2{
+        font-size: 35px;
+        margin-top: 0;
+      }
+      h5{
+        font-size: 15px;
+        color: $FirstColor;
+      }
+      h3{
+        font-size: 25px;
+        margin-top: 60px;
+        margin-bottom: 0;
+        color: $SecondColor;
+      }
+      .result{
+        margin: 40px auto;
+        h4{
+          font-size: 18px;
+          font-weight: 600;
+          color: black;
+        }
+        table {
+          border-collapse: collapse;
+          box-sizing: border-box;
+          width: 100%;
+          margin: 20px auto;
+          color: #818181;
+          th {
+            background-color: $FirstColor;
+            color: white;
+            text-align: left;
+          }
+          tr,td{
+            border: 1px solid #ddd;
+          }
+          th, td {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}

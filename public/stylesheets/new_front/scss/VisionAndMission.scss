@@ -1,0 +1,44 @@
+.VisionANdMission{
+ .container{
+   .Common_content{
+     display: flex;
+     .left{
+       @extend .CommonBar;
+     }
+     .right{
+       flex: 3;
+       div{
+         width: 50%;
+         margin: 60px auto;
+         padding: 20px 50px 50px 50px;
+         border:1px solid rgba(15, 70, 100, 0.05);
+         h2{
+           text-align: center;
+           font-size: 35px;
+           color: $SecondColor;
+           @include transition(0.5);
+         }
+         p{
+           color: #858585;
+           line-height: 2em;
+           @include transition(0.5);
+           font-size: 15px;
+         }
+         .vision{
+           text-align: center;
+         }
+         @include transition(0.5);
+         &:hover{
+           box-shadow: 3.5px 6px 25px 0 rgba(0, 0, 0, 0.1);
+           p{
+             color: $FirstColor;
+           }
+           h2{
+             color: black;
+           }
+         }
+       }
+     }
+   }
+ }
+}

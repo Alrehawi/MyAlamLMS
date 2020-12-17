@@ -1,0 +1,209 @@
+
+/*---------Layout--------------*/
+@import url("https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900");
+ @font-face {
+  font-family: myFirstFont;
+  src: url(dinar_one_medium.otf);
+}
+
+body {
+  font-family: "myFirstFont" !important;
+}
+
+/*----------Header------------*/
+.header .left {
+  order: 2;
+}
+.header .right {
+  order: 1;
+  text-align: left;
+}
+.header .right .login .upper {
+  display: flex;
+}
+.header .right .login .upper div {
+  flex-direction: row-reverse;
+}
+.header .right .login .upper div:first-of-type {
+  order: 2;
+}
+.header .right .login .upper div:last-of-type {
+  order: 1;
+}
+.header .right .login .upper div p {
+  margin-left: 15px;
+  margin-right: 7px;
+}
+.header .right .login .LoginButton a {
+  font-family: 'Cairo', sans-serif;
+}
+.header .right .search {
+  flex-direction: row-reverse;
+}
+.header .right .search input.SearchInput {
+  direction: rtl;
+  border-right: 1px solid #e1e1e1;
+  border-left: none;
+}
+.header .right .search .icon .SearchIcon {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  left: 0;
+}
+
+/*----------Nav------------*/
+.content .nav-menu {
+  flex-direction: row-reverse;
+}
+.content .nav-menu li {
+  /* border-right: none; */
+  border-left: 1px solid #0a9fd8;
+}
+.content .nav-menu li a {
+  text-align: right;
+}
+.content .nav-menu li ul li {
+  border-left: none;
+}
+.content .nav-menu li:last-child {
+  border-left: none;
+}
+
+.navigation-portrait .submenu-indicator {
+  left: 0;
+  right: auto;
+  position: relative;
+  top: -3px
+}
+
+@media (min-width: 768px) {
+  .submenu-indicator {
+    float: left;
+    margin-left: 0;
+    margin-right: 6px;
+    margin-top: 10px;
+  }
+
+  .nav-dropdown .submenu-indicator {
+    right: auto;
+    left: 15px;
+    transform: rotate(180deg);
+  }
+
+  .nav-dropdown .nav-dropdown {
+    left: auto;
+    right: 100%;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .content .nav-menu li a {
+    font-size: 10px;
+  }
+}
+/*----------PredCramp------------*/
+.predcramp {
+  direction: rtl;
+}
+.predcramp ul {
+  padding-right: 0;
+}
+.predcramp ul li {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/*----------CommonBar-------------*/
+.CommonBar, .news .container .news_content .left {
+  /*commonBar*/
+  margin-right: 0;
+  margin-left: 25px;
+}
+.CommonBar .Graduate .Graduate_item p, .news .container .news_content .left .Graduate .Graduate_item p {
+  padding: 0 15px 0 0 !important;
+}
+.CommonBar .twitter .Twitter_Header .Follow, .news .container .news_content .left .twitter .Twitter_Header .Follow {
+  text-align: left !important;
+}
+
+/*----------Footer-------------*/
+footer .container {
+  direction: rtl;
+}
+footer .container .Footer_details .Footer_Links .Footer_item ul {
+  padding-right: 0;
+}
+footer .container .Footer_details .Footer_Links .Footer_item ul li {
+  padding-right: 0;
+  padding-left: 20px;
+}
+footer .container .Footer_details .Footer_Links .Footer_item ul li a img {
+  margin-left: 0;
+  margin-right: -10px;
+}
+
+/*----------Home-------------*/
+/*********Slider*****/
+.slider #owl-demo .item div .slider_content {
+  direction: rtl;
+}
+.slider #owl-demo .item div .slider_content h2 {
+  padding-right: 0;
+}
+.slider #owl-demo .item div .slider_content .Read a p {
+  margin: 6px 0 0 10px;
+}
+.slider #owl-demo .item div .slider_content .Read a svg {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/*******About********/
+.about .container .left {
+  direction: rtl;
+  order: 2;
+}
+.about .container .right {
+  direction: rtl;
+  order: 1;
+}
+
+/********News********/
+.news .container .news_content {
+  flex-direction: row-reverse;
+}
+.news .container .news_content .right .right_head {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.news .container .news_content .right .right_head p {
+  text-align: right;
+}
+.news .container .news_content .right .right_head .Read_More {
+  text-align: left;
+}
+.news .container .news_content .right .right_content {
+  direction: rtl;
+}
+.news .container .news_content .right .right_Events {
+  direction: rtl;
+}
+.news .container .news_content .right .right_Events .Events .calender {
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+/******contact*******/
+.contact .container {
+  direction: rtl;
+}
+.contact .container .contact_info .subscribe p {
+  padding-right: 0;
+  padding-left: 50px;
+}
+.contact .container .contact_info .subscribe form input {
+  padding: 17px 20px 17px 0;
+}

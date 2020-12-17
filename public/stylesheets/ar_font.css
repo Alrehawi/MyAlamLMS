@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {	font-family: S-Font;	src: url('fonts/HelveticaNeueW23-Bd.eot') /* EOT file for IE */}
+@font-face {	font-family: S-Font;	src: url('fonts/HelveticaNeueW23-Bd.ttf') /* TTF file for CSS3 browsers */}
+
+@font-face {	font-family: S-FontSmall;	src: url('fonts/HelveticaNeueW23-Reg.eot') /* EOT file for IE */}
+@font-face {	font-family: S-FontSmall;	src: url('fonts/HelveticaNeueW23-Reg.ttf') /* TTF file for CSS3 browsers */}

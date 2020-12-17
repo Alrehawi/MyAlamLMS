@@ -1,0 +1,1397 @@
+/*Mobile*/
+@media (min-width: 190px) and (max-width: 551px) {
+  /*****Header******/
+  .header{
+    display:block;
+   .left{
+     display: block;
+    margin: 0 auto;
+   }
+    .right{
+      width: 100%;
+      .login{
+        .upper{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          div{
+            svg{
+              width: 12px;
+              height: 12px;
+            }
+            p{
+              margin-right: 5px;
+              margin-left: 2px;
+              font-size: 10px;/*sh*/
+            }
+          }
+          .LoginButton{
+            padding: 5px 8px;
+          }
+        }
+      }
+      .search{
+        input.SearchInput{
+          width: 100%;
+        }
+      }
+    }
+  }
+  /****Slider*******/
+  .slider{
+    #owl-demo {
+      .item{
+        div{
+          .slider_content{
+            width: 70%;
+            h2{
+              font-size: 25px;
+              padding-right: 0;
+            }
+            p{
+              font-size: 14px;
+            }
+            .Read{
+              a{
+                p{
+                  font-size: 12px;
+                }
+                svg{
+                  width: 25px;
+                  height: 28px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .owl-theme .owl-nav [class*=owl-]{
+      svg{
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .owl-next{
+      right: 1%;
+    }
+    .owl-prev{
+      left: 1%;
+    }
+  }
+  /*******About******/
+  .about{
+    .container{
+      display: block;
+      .left{
+        h2{
+          font-size: 25px;
+        }
+        p{
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+      }
+      .right{
+        margin-left: 0;
+        input{
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  /********News******/
+  .news{
+    .container{
+      .news_content{
+        flex-wrap: wrap;
+        .left{
+          flex:none;
+          order:2;
+          width: 100%;
+          margin-right: 0;
+          h2{
+            font-size: 25px;
+          }
+          .Graduate{
+            .Graduate_item{
+              .Graduate_person{
+                .Graduate_overlay{
+                  height: 80px;
+                }
+                img{
+                  max-width:80px;
+                  min-height: 80px;
+                }
+              }
+              p{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .right{
+          flex: none;
+          order: 1;
+          width: 100%;
+          .right_head{
+            p{
+              font-size: 25px;
+              margin-top: 15px;
+            }
+            .Read_More{
+              input{
+                font-size: 12px;
+                margin-bottom: 0;
+                padding: 7px 15px ;
+
+              }
+            }
+          }
+          .right_content{
+            width: 80%;
+            margin: 0 auto;
+            .right_item{
+              width: 100%;
+            }
+          }
+          .right_Events{
+            h2{
+              font-size: 25px;
+            }
+            .Events{
+              flex-wrap: wrap;
+              .calender{
+                width: 100%;
+                margin-right: 0;
+                height: 320px;
+                .ui-datepicker{
+                  .ui-datepicker-header{
+                    padding: 0.4em 0;
+                  }
+                  .ui-datepicker-calendar{
+                    tbody{
+                      width: 100%;
+                      tr{
+                        td{
+                          a{
+                            padding: 0.4em;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                }
+              }
+              .calender_details{
+                width: 100%;
+                .calender_item{
+                  width: 100%;
+                  margin-bottom: 25px;
+                  span{
+                    font-size: 11px;
+                  }
+                  h4{
+                    font-size: 15px;
+                    margin: 12px 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*******Count******/
+  .count{
+    .count_opacity{
+      .container{
+        .count_data{
+          display: block;
+          padding: 55px 0;
+          .item{
+            margin:70px auto ;
+            span{
+              font-size: 35px;
+            }
+            p{
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*****contact*****/
+  .contact{
+    .container{
+      .contact_info{
+        flex-wrap: wrap;
+        .map{
+          width: 100%;
+        }
+        .subscribe{
+          width: 100%;
+          h3{
+            margin-top: 25px ;
+          }
+          p{
+            font-size: 15px;
+            padding-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  /****Footer*******/
+  footer{
+    .container{
+      .Footer_details{
+        h3{
+          font-size: 25px;
+        }
+        .Footer_Links{
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .Footer_item{
+            flex: inherit;
+            width: 50%;
+            ul{
+              li{
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .CopyRight{
+      p{
+        font-size: 10px;
+      }
+    }
+  }
+  /****predcramp***/
+  .predcramp{
+    padding: 5px 0;
+    ul{
+      margin-left: 0 ;
+      li{
+        font-size: 10px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+
+/**********Inside Pages*******************/
+  /****************AboutUS***************/
+  /*****Beliefs****/
+  .Beliefs{
+    .container{
+      .Common_content{
+        .right{
+          h2{
+            font-size: 25px;
+            margin-left: 0;
+          }
+          ul{
+            margin: 10px 0 ;
+            li{
+              margin: 50px auto;
+              h3{
+                font-size: 13px;
+              }
+              p{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /****Vision****/
+  .VisionANdMission{
+    .container{
+      .Common_content{
+        .right{
+          div{
+            box-sizing: border-box;
+            width: 100%;
+            padding: 25px;
+            h2{
+              font-size: 25px;
+            }
+            p{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  /****AboutSchools*/
+  .AboutSchools{
+    .container{
+      .Common_content{
+        .right{
+          h2{
+            font-size: 25px;
+            margin-left: 0;
+          }
+          div{
+            margin: 60px 0;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  /*****Systems***/
+  .Systems{
+    .container{
+      .Common_content{
+        .right{
+          h2{
+            font-size: 25px;
+            margin-left: 0;
+          }
+          div{
+            margin: 60px 0;
+            font-size: 12px;
+            span{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /****************Registration***********/
+  /****Registration***/
+  .Registration{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        ul{
+          margin: 60px 5px;
+          padding-left: 10px;
+          li{
+            margin: 25px auto;
+            font-size: 13px;
+            ul{
+              margin: 40px 0 40px 40px;
+            }
+          }
+        }
+        .Register{
+          button{
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  /*Registration-Form*/
+  .Registration-Form{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 18px;
+          width: 100%;
+        }
+        form{
+          width: 100%;
+          legend{
+            font-size: 13px;
+          }
+          hr{
+            width: 130px;
+          }
+          .FormDiv{
+            label{
+              font-size: 13px;
+            }
+            .ButtonRegister{
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+  /***StudyFees*******/
+  .StudyFees{
+    width: 100%;
+    .Common_content{
+      .right{
+        padding-left: 0;
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        h4{
+          font-size: 15px;
+          margin-left: 0;
+        }
+        table {
+          width: 100%;
+          margin: 0;
+          font-size: 13px;
+          th, td {
+            padding: 15px 0;
+          }
+        }
+        .AdditionalFees{
+          width: 100%;
+          margin: 0;
+          ul{
+            li{
+              font-size: 12px;
+            }
+          }
+          .end{
+            margin:25px auto;
+          }
+          h5{
+            text-align: center;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  /**************Students Guiding**********/
+  .AStudents{
+    .Common_content{
+      .right{
+        padding-left: 0;
+        h2{
+          margin-left: 0;
+          font-size: 25px;
+        }
+        h5{
+          margin-left: 0;
+          font-size: 12px;
+        }
+        h3{
+          margin-left: 0;
+          font-size:20px;
+          margin-top: 40px;
+        }
+        .result{
+          h4{
+            margin-left: 0;
+            font-size: 15px;
+            width: 100%;
+          }
+          table {
+            width: 100%;
+            th, td {
+              font-size: 12px;
+              padding: 15px 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*Boys Guiding*/
+  .BoysGuiding{
+    .Common_content{
+      .right{
+        padding-left: 0;
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        .GuideContent{
+          ul{
+            margin: 60px 0 ;
+            li{
+              margin: 20px auto;
+              font-size: 12px;
+              p{
+                font-size: 15px;
+              }
+              ul{
+                margin: 20px 0 20px 20px;
+                li{
+                  margin: 20px 0 20px 15px;
+                  h5{
+                    font-size: 13px;
+                    span{
+                      font-size: 15px;
+                    }
+                  }
+                  ul{
+                    li{
+                      font-size: 12px;
+                      margin: 20px 0 20px 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /******************Careers***********************/
+  /******Trainings***/
+  .Trainings{
+    .Common_content{
+      .right{
+        padding-left: 20px;
+
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        .TrainingsContent{
+          width: 100%;
+          ul{
+            margin: 60px 0;
+            li{
+              margin: 20px auto;
+              font-size: 12px;
+              h3{
+                color: $SecondColor;
+                font-size: 13px;
+              }
+              p{
+                font-size: 12px;
+              }
+              span{
+                margin: 0;
+                font-size: 12px;
+              }
+              ul{
+                margin: 20px 0 20px 20px  ;
+                li{
+                  margin-left:20px ;
+                  h3{
+                    font-size: 13px;
+                  }
+                  p{
+                    font-size: 12px;
+                  }
+                  span{
+                    margin: 0;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+          .signature{
+            margin: 30px auto;
+            h5{
+              font-size: 15px;
+            }
+            p{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*******Jobs*******/
+  .Careers{
+    .Common_content{
+      .right{
+        padding-left: 0;
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        .Jobs{
+          .Jobs_item{
+            width: 90%;
+            padding: 40px 10px 10px 20px;
+            p{
+              span{
+                font-size: 13px;
+              }
+            }
+            .Job_Details{
+              font-size: 12px;
+            }
+            .ApplyNow{
+              button{
+                width: 50%;
+                margin: 10px 0 0 50%;
+                a{
+                  padding: 12px 0;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /***Job Application**/
+  .Career-Form{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+        }
+        .Jobs{
+          .Jobs_item{
+            width: 90%;
+            padding: 40px 10px 10px 20px;
+            p{
+              span{
+                font-size: 13px;
+              }
+            }
+            .Job_Details{
+              font-size: 12px;
+            }
+            .ApplyNow{
+              button{
+                width: 50%;
+                margin: 10px 0 0 50%;
+                a{
+                  padding: 12px 0;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /**************Resources*****************************/
+  .AlAnjalNews{
+    .Common_content{
+      .right{
+        padding-left: 0;
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        .News_content{
+          margin: 50px 0;
+          h4{
+            font-size: 13px;
+          }
+          ul{
+            li{
+              width: 50%;
+              margin: 30px auto;
+              a{
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  /******Library******/
+  .Library{
+    .Common_content{
+      .right{
+        padding-left: 0;
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        .Library-data{
+          margin: 50px 0;
+          ul{
+            li{
+              width: 45%;
+            }
+          }
+          .Lib_content{
+            width: 100%;
+            .Lib_item{
+              display: block;
+              padding: 20px 0;
+              p{
+                width: 100%;
+              }
+
+              input{
+                width: 100%;
+              }
+
+              input[type="submit"]{
+                width: 40%;
+                margin: 20px auto 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /******Partnership********/
+  .Partnership{
+    .Common_content{
+      .right{
+        flex-wrap: wrap;
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        ul{
+          width: 100%;
+          order:2;
+          margin: 10px 0 ;
+          li{
+            font-size: 13px;
+          }
+        }
+        .Partner{
+          order: 1;
+          width: 40%;
+          img{
+            width: 100%;
+          }
+          margin: 0 auto;
+          margin-bottom: 40px;
+
+        }
+
+
+      }
+    }
+  }
+  /*FileDownloadCenter*/
+  .FileDownloadCenter{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-top: 0;
+          margin-bottom: 60px;
+        }
+        .right_content{
+          width: 80%;
+          margin: 0 auto;
+          .right_item{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /*FileDownload*/
+  .File{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-left: 0 ;
+        }
+        ul{
+          margin: 20px 0;
+          li{
+            a{
+              span{
+                font-size: 15px;
+              }
+            }
+            div{
+              ul{
+                li{
+                  flex-wrap: wrap;
+                  justify-content: flex-start;
+                  p{
+                    width: 100%;
+                    font-size: 13px;
+                  }
+                  button{
+                    width: 70%;
+                    margin: 0 auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  /*Graduates*/
+  .Graduates{
+    .Common_content{
+      .right{
+        padding-left: 0;
+        h2{
+          font-size: 25px;
+          margin-top: 0;
+        }
+        .Lib_content{
+          width: 100%;
+          .Lib_item{
+            display: block;
+            padding: 20px 0;
+            p{
+              width: 100%;
+            }
+
+            input,select{
+              width: 100%;
+            }
+
+            input[type="submit"]{
+              width: 40%;
+              margin: 20px auto 0 auto;
+            }
+          }
+        }
+        .Graduate_Students{
+          h4{
+            margin-left: 0;
+            font-size: 15px;
+            width: 100%;
+          }
+          table {
+            width: 100%;
+            th, td {
+              font-size: 12px;
+              padding: 15px 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*School Survey*/
+  .Survey{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-left: 0 ;
+        }
+        ul{
+          margin: 20px 0 ;
+          li{
+            p{
+              font-size: 15px;
+            }
+            ul{
+              padding-left: 20px;
+              li{
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*News*/
+  .News{
+    .Common_content{
+      .right{
+
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        .right_content{
+          width: 80%;
+          margin: 0 auto;
+          .right_item{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /*Events*/
+  .Events{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-left: 0 ;
+        }
+        .right_Events{
+          h2{
+            font-size: 25px;
+          }
+          .Events{
+            flex-wrap: wrap;
+            .calender{
+              order: 1;
+              width: 100%;
+              margin-right: 0;
+              height: 320px;
+              .ui-datepicker{
+                .ui-datepicker-header{
+                  padding: 0.4em 0;
+                }
+                .ui-datepicker-calendar{
+                  tbody{
+                    width: 100%;
+                    tr{
+                      td{
+                        a{
+                          padding: 0.4em;
+                        }
+                      }
+                    }
+                  }
+                }
+
+              }
+            }
+            .calender_details{
+              margin-left: 0;
+              order: 2;
+              width: 100%;
+              .calender_item{
+                width: 100%;
+                margin-bottom: 25px;
+                span{
+                  font-size: 11px;
+                }
+                h4{
+                  font-size: 15px;
+                  margin: 12px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  /*Event Details*/
+  .Eventdetails{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-left: 0 ;
+        }
+        .details{
+          flex-wrap: wrap;
+          margin-left: 0;
+          margin-right: 20px;
+
+          span{
+            svg{
+            }
+            p{
+              font-size: 11px;
+            }
+          }
+          .EventContent{
+            order: 2;
+            width: 100%;
+            padding-right: 0;
+            p{
+              font-size: 13px;
+            }
+          }
+          .EventImg{
+            order: 1;
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  /*Distingusish*/
+  .Distinguished{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-left: 0 ;
+        }
+        .details{
+          flex-wrap: wrap;
+          margin-left: 0;
+          margin-right: 0;
+          h3{
+            font-size: 15px;
+          }
+          span{
+            font-size: 11px;
+          }
+          .EventContent{
+            order: 2;
+            width: 100%;
+            padding-right: 0;
+            p{
+              font-size: 13px;
+            }
+          }
+          .EventImg{
+            order: 1;
+            width: 50%;
+            margin: 30px auto  15px auto;
+            img{
+              width: 100%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  /*******************************************************/
+  /******Contact Us*****/
+  .ContactUs{
+    .map{
+      height: 300px;
+    }
+    .Common_content{
+      flex-wrap: wrap;
+      h2{
+        font-size: 25px;
+      }
+      .Contact_Left{
+        width: 100%;
+        order: 2;
+        p{
+          font-size: 13px;
+        }
+
+      }
+      .Contact_right{
+        width: 100%;
+        padding-left: 0;
+        order: 1;
+        ul {
+          font-size: 13px;
+        }
+      }
+
+    }
+  }
+  /*****Login**********/
+  .Login {
+    p {
+      font-size: 12px;
+    }
+    .login-page {
+      width: 100%;
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .success-message {
+        font-size: 13px;
+      }
+
+      .error-message {
+        font-size: 13px;
+      }
+
+      .row-form {
+        label {
+          font-size: 13px;
+        }
+      }
+    }
+    .checkbox-input {
+      label {
+        font-size: 13px;
+      }
+    }
+    .forget-pass {
+      font-size: 13px;
+    }
+  }
+  /******Register********/
+  .Register {
+    .Register_page {
+      width: 100%;
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .row-form {
+
+        label {
+          font-size: 13px;
+        }
+
+      }
+      .birth-date{
+        .date{
+          display: flex;
+          width: 100%;
+          .part{
+            width: 33.3%;
+            padding-right: 5px;
+            box-sizing: border-box;
+            &:last-child{
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .checkbox-input {
+      label {
+        font-size: 13px;
+      }
+    }
+  }
+  /*******NewsDetails***/
+  .News-details{
+    .Common_content{
+      .right{
+        .blog-details {
+          flex-wrap: wrap;
+
+          .middle{
+            width: 100%;
+            padding-right: 0;
+
+            .title-article {
+              h1 {
+                font-size: 25px;
+                margin:0;
+              }
+            }
+            .about-art {
+              padding: 5px 0;
+              .info {
+                ul {
+                  margin: 5px 0;
+                  li {
+                    font-size: 12px;
+                    span {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+
+              .share {
+                height: auto;
+                width: auto;
+                float: right;
+
+                ul {
+                  list-style: none;
+
+                  li {
+                    display: inline-block;
+
+                    &:first-child {
+                      margin-right: 10px;
+                    }
+
+                    span {
+                      display: block;
+                      line-height: 29px;
+                      height: 30px;
+                      overflow: hidden;
+                    }
+
+                    a {
+                      width: 30px;
+                      display: block;
+                      height: 30px;
+                      border-radius: 50%;
+                      text-align: center;
+                      overflow: hidden;
+                      line-height: 34px;
+
+                      &.facebook {
+                        background: #3b5998;
+                      }
+
+                      &.twitter {
+                        background: #76a9ea;
+                      }
+
+                      &.linkedin {
+                        background: #0084b1;
+                      }
+
+                      &.instagram {
+                        background: #ef72ad;
+                      }
+
+                      svg {
+                        width: 14px;
+                        height: 16px;
+                        fill: #fff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .text {
+              article {
+                font-size: 12px;
+              }
+
+              h2 {
+               font-size: 20px;
+              }
+            }
+          }
+          .PopNews{
+            width: 100%;
+            margin: 0 auto;
+          }
+
+        }
+
+
+      }
+    }
+  }
+  /*Gallery*/
+  .Gallery{
+    .Common_content{
+
+      .right{
+        padding-left: 0;
+        h2{
+          font-size: 25px;
+          margin-left: 0 ;
+        }
+        .Gallery_Content{
+          .Gallery_item{
+            margin: 10px auto;
+            width: 80%;
+            height: 200px;
+            img{
+              width:100% ;
+              height: 200px;
+            }
+          }
+          .button{
+            width: 40%;
+          }
+        }
+
+      }
+    }
+  }
+  /*Gallery Details*/
+  .GalleryDetails{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-left:0 ;
+        }
+        ul{
+          padding-left: 0;
+        }
+        .lb-album{
+          margin: 0 auto;
+        }
+        .lb-overlay img{
+          max-width: 250px;
+        }
+        .lb-overlay:target {
+          padding:100px 10px
+        }
+      }
+    }
+  }
+  /***Videos*****/
+  .Video{
+    .Common_content{
+      .right{
+        h2{
+          font-size: 25px;
+          margin-left: 0;
+        }
+        ul{
+          padding-left: 0;
+        }
+        .lb-overlay .VideoFrame{
+          iframe{
+            width: 90%;
+            height: 350px;
+          }
+        }
+        .lb-overlay:target {
+          padding: 80px 10px;
+        }
+
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,265 @@
+
+.Events{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      h2{
+        font-size: 35px;
+        margin-left: 20px ;
+        margin-top: 0;
+      }
+      .right_Events{
+        .Events{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          .calender{
+            width: 40%;
+            height: 260px;
+            order: 2;
+
+            .ui-datepicker{
+              width: 100%;
+              box-sizing: border-box;
+              padding: 0;
+
+              .ui-datepicker-header{
+                padding: 0.35em 0;
+                background-color: $CalenderColor;
+                color: white;
+                .ui-datepicker-title{
+                  font-size:15px;
+                  font-weight: 300;
+                  .ui-datepicker-month{
+
+                  }
+                  .ui-datepicker-year{
+
+                  }
+                }
+                .ui-datepicker-prev, .ui-datepicker-next{
+                  display: none;
+                }
+              }
+
+              .ui-datepicker-calendar{
+                margin: 0;
+                border: 1px solid #f2f2f2;
+                border-top:none;
+                thead{
+                  tr{
+                    th{
+                      font-weight: 300;
+                      padding: 20px 0;
+                      font-size: .8em;
+                    }
+                  }
+                }
+                tbody{
+                  tr{
+                    td{
+                      a{
+                        padding: 0.7em;
+                      }
+                      .ui-state-default{
+                        text-align: center;
+                        border-radius: 5px;
+                        &:hover{
+                          /*color:$CalenderColor ;*/
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .ui-widget-header,.ui-widget-content{
+              border: none;
+            }
+            .ui-corner-all{
+              border-bottom-right-radius:0;
+              border-bottom-left-radius:0;
+              border-top-right-radius:0;
+              border-top-left-radius:0;
+
+            }
+            .ui-state-default,
+            .ui-widget-content .ui-state-default{
+              border-color: transparent;
+              background-color: transparent;
+              color: black;
+            }
+            .ui-state-hover,
+            .ui-widget-content .ui-state-hover{
+              border-color: transparent;
+              background-color:transparent;
+              color: $CalenderColor;
+            }
+            .ui-state-highlight,
+            .ui-widget-content .ui-state-highlight,
+            .ui-state-active,
+            .ui-widget-content .ui-state-active{
+              background-color:$CalenderColor;
+              border-color: transparent;
+              color:white;
+            }
+          }
+          .calender_details{
+            order: 1;
+            width: 100%;
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            p{
+              line-height: 2em;
+              color: #818181;
+              font-size: 15px;
+            }
+            .calender_item{
+              width: 100%;
+              margin-bottom: 40px;
+              text-transform: uppercase;
+              span{
+                color: $FirstColor;
+                font-size: 13px;
+                font-weight: 400;
+                display: flex;
+                margin-top: 10px;
+                svg{
+                  height: 26px;
+                  width: 15px;
+                  fill: #818181;
+                }
+                p{
+                  margin: 0 5px;
+                  color: $FirstColor;
+                  font-size: 13px;
+                }
+              }
+              h4{
+                font-size: 17px;
+                font-weight: 600;
+                margin: 15px 0 0 0;
+                a{
+                  color: black;
+                  @include transition(0.5);
+                }
+                &:hover{
+                  a{
+                    color: $SecondColor;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Events{
+    .Common_content {
+      .right{
+        .right_Events {
+          h2 {
+            font-size: 25px;
+          }
+          .Events {
+            flex-wrap: wrap;
+            .calender {
+              order: 1;
+              width: 80%;/*SH*/
+              margin-bottom: 60px;
+              margin-left: 60px;
+            }
+            .calender_details {
+              order: 2;
+              width: 100%; /*SH*/
+              display: block;/*SH*/
+              margin-top: 40px;
+              margin-left: 0;
+
+              .calender_item {
+                width: 100%;/*SH*/
+                span {
+                  font-size: 12px;
+                }
+                h4 {
+                  font-size: 15px;
+                  margin: 5px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+@media (min-width: 551px) and (max-width: 767px) {
+  .Events{
+    .Common_content {
+      .right{
+        .right_Events {
+          h2 {
+            font-size: 25px;
+          }
+          .Events {
+            display: block;
+            .calender {
+              order: 1;
+              width: 95%;
+              height: 310px;
+            }
+            .calender_details {
+              width: 100%; /*SH*/
+              display: block;/*SH*/
+              order:2 ;
+              margin-left: 0;
+
+              p{
+                margin-left: 0;
+              }
+
+              .calender_item {
+                width: 100%;/*SH*/
+                margin-bottom: 20px;/*SH*/
+                margin-left: 0;
+                span {
+                  font-size: 12px;
+                }
+                h4 {
+                  font-size: 15px;
+                  margin: 5px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+

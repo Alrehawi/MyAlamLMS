@@ -1,0 +1,81 @@
+
+.Distinguished{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      h2{
+        font-size: 35px;
+        margin-left: 20px ;
+        margin-top: 0;
+      }
+      .details{
+        display: flex;
+        margin-left: 20px;
+        span{
+          margin: 0;
+          color: $FirstColor;
+          font-size: 12px;
+        }
+        .EventContent{
+          margin-top: 20px;
+          width: 70%;
+          box-sizing: border-box;
+          padding-right: 20px;
+          p{
+            color: #818181;
+            line-height: 2em;
+            font-size: 15px;
+          }
+        }
+        .EventImg{
+          margin-top: 30px;
+          width: 20%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+@media (min-width: 551px) and (max-width: 767px) {
+  .Distinguished{
+    .Common_content{
+      .right{
+        .details{
+          flex-wrap: wrap;
+          margin-left: 0;
+          margin-right: 20px;
+
+          span{
+            font-size: 11px;
+          }
+          .EventContent{
+            order: 2;
+            width: 100%;
+            padding-right: 0;
+            p{
+              font-size: 13px;
+            }
+          }
+          .EventImg{
+            order: 1;
+            width: 40%;
+            margin: 30px auto  15px auto;
+            img{
+              width: 100%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

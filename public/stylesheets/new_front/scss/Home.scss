@@ -1,0 +1,877 @@
+/*********Slider***********/
+.slider{
+  #owl-demo {
+    .item{
+        &:nth-child(1){
+          @include background("Slide.jpg","",600);
+        }
+        &:nth-child(2){
+          @include background("Slide.jpg","",600);
+        }
+        &:nth-child(3){
+          @include background("Slide.jpg","",600);
+        }
+      div{
+        @include Gradient(180deg,rgba(255, 255, 255, 0), rgba(0, 0, 0, 1),600);
+        .slider_content{
+          color: white;
+          position: absolute;
+          width: 40%;
+          top: 50%;
+          left: 13%;
+          @include Gradient(180deg,rgba(255, 255, 255, 0), rgba(0, 0, 0, 0),600);
+          h2{
+            font-size: 35px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            padding-right: 70px;
+          }
+          p{
+            font-size: 17px;
+            font-weight: 300;
+          }
+          .Read{
+            a{
+              display: flex;
+              p{
+                color: $SecondColor;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 6px 10px 0 0;
+              }
+              svg{
+                width: 35px;
+                height: 35px;
+                fill: $SecondColor;
+
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .owl-theme .owl-nav [class*=owl-]{
+    background-color: transparent;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 300;
+    top: 47%;
+    svg{
+      width: 50px;
+      height: 50px;
+      fill: white;
+    }
+  }
+  .owl-theme .owl-nav{
+    margin-top: 0;
+  }
+  .owl-next{
+    right: 3.3%;
+  }
+  .owl-prev{
+    left: 3.3%;
+
+  }
+
+}
+/*******About**************/
+.about{
+  background-color: $SecondColor;
+  background: url("../images/about.jpg");
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  display: block;
+  padding: 50px 0;
+  vertical-align: middle;
+
+  .container{
+    display: flex;
+    align-items: center;
+    .left{
+      flex: 2;
+      h2{
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 10px;
+      }
+      p{
+        font-size: 16px;
+        color: #282828;
+        font-weight: 400;
+        line-height: 1.5em ;
+        margin-bottom: 10px;
+      }
+    }
+    .right{
+      flex: 1;
+      text-align: center;
+      margin-left: 20px;
+
+      button{
+        @include customButton(transparent,white,3,10,55 ,0 ,0);
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid white;
+        cursor: pointer;
+        @include transition(0.5);
+        a{
+          color: white;
+          @include transition(0.5);
+        }
+        &:hover{
+          background-color: black;
+          border-color: black;
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+/********News*******/
+.news{
+  .container{
+    .news_content{
+      display: flex;
+      .left{
+        flex: 0.95;
+        margin-right: 25px;
+        h2{
+          text-transform: uppercase;
+          font-size: 27px;
+          font-weight: 600;
+        }
+        .Graduate{
+          background-color: #f7f7f7;
+          display: flex;
+          flex-direction:column;
+          padding: 5px ;
+          .Graduate_item{
+            display: inline-flex;
+            position: relative;
+            margin: 10px 10px 0 10px;
+            &:last-child{
+              margin-top: 15px;
+              margin-bottom: 10px;
+            }
+            a{
+              position: absolute;
+              top:0;
+              bottom:0;
+              left:0;
+              right:0;
+            }
+            .Graduate_person{
+              position: relative;
+              .Graduate_overlay{
+                height: 100px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: rgba(40, 36, 63, 0.2);
+                @include transition(0.5);
+              }
+              img{
+                flex:1;
+                max-width:100px;
+                min-height: 100px;
+              }
+            }
+            p{
+              flex: 1;
+              font-size: 13px;
+              font-weight: 600;
+              line-height: 1.5em;
+              padding: 0  0 0 15px;
+              margin: 0 auto;
+              @include transition(0.5);
+            }
+            &:hover{
+              p{
+                color: $SecondColor;
+              }
+              .Graduate_person{
+                .Graduate_overlay{
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+        .E-Learing{
+          @include background("E-Service.jpg","","");
+          width: 100%;
+          margin: 30px auto;
+          .transparent{
+            background-color: rgba(40, 36, 63, 0.6);
+            height: 150px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            a{
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+            }
+            @include transition(0.5);
+            &:hover{
+              background-color: rgba(40, 36, 63, 0.2);
+            }
+          }
+        }
+        .twitter{
+          .Twitter_Header{
+            display: flex;
+            align-items: center;
+            border-top: 1px solid rgba(15,70,100,.12); ;
+            p{
+              flex: 1;
+              margin: 10px 0 10px 2px;
+              font-weight: 700;
+            }
+            .Follow{
+              flex: 1;
+              text-align: right;
+            }
+          }
+         /* .TimeLine{
+            height: 542px;
+          }*/
+          .twitter-timeline {
+            height: 542px !important;
+          }
+        }
+      }
+      .right{
+        flex: 3;
+        .right_head{
+          display: flex;
+          align-items: center;
+          p{
+            flex: 1;
+            font-weight: 600;
+            font-size: 27px;
+            margin-bottom: 15px;
+            margin-top: 22.5px;
+          }
+          .Read_More{
+            flex: 1;
+            text-align: right;
+            .Button{
+              @include customButton($SecondColor,black,5,10,25 ,0 ,0);
+              cursor: pointer;
+              font-size: 15px;
+              font-weight: 600;
+              margin-bottom: 5px;
+              @include transition(0.5);
+              a{
+                color: black;
+                @include transition(0.5);
+              }
+              &:hover{
+                background-color: black;
+                a{
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+        .right_content{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .right_item{
+            width: 31%;
+            position: relative;
+            margin-bottom:25px;
+            @include transition(0.5);
+            &:hover{
+              box-shadow: 3.5px 6px 25px 0 rgba(0, 0, 0, 0.1);
+              .right_thumb{
+                h3{
+                  a{
+                    color: $SecondColor;
+                  }
+                }
+              }
+              .Img_content{
+                .overlay{
+                  opacity: 1;
+                }
+              }
+            }
+            .item_href{
+              a{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+              }
+            }
+            .Img_content{
+              position: relative;
+              img{
+                width: 100%;
+                height: auto;
+              }
+              .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 98%;
+                width: 100%;
+                opacity: 0;
+                background-color: rgba(40, 36, 63, 0.2);
+                @include transition(0.5);
+                display: flex;
+                align-items: center;
+                a{
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                }
+                .text{
+                  margin: 0 auto;
+                  svg{
+                    fill: $SecondColor;
+                    height: 50px;
+                    width: 50px;
+                  }
+                }
+              }
+            }
+            .right_thumb{
+              border: 1px solid rgba(15,70,100,.05);
+              border-top:none;
+              padding: 13px;
+              line-height: 1.2em;
+              h3{
+                font-size: 16px;
+                margin: 0;
+                font-weight: 600;
+                a{
+                  color: black;
+                  @include transition(0.3);
+                }
+              }
+              p{
+                font-size: 13px;
+                color: #858585;
+              }
+            }
+          }
+        }
+        .right_Events{
+          h2{
+            text-transform:uppercase;
+            font-size: 27px;
+            font-weight: 600;
+            margin: 20px auto;
+          }
+          .Events{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .calender{
+              width: 40%;
+              margin-right: 25px;
+              height: 260px;
+
+              .ui-datepicker{
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0;
+
+                .ui-datepicker-header{
+                  padding: 0.35em 0;
+                  background-color: $CalenderColor;
+                  color: white;
+                  .ui-datepicker-title{
+                    font-size:15px;
+                    font-weight: 300;
+                    .ui-datepicker-month{
+
+                    }
+                    .ui-datepicker-year{
+
+                    }
+                  }
+                  .ui-datepicker-prev, .ui-datepicker-next{
+                    display: none;
+                  }
+                }
+
+                .ui-datepicker-calendar{
+                  margin: 0;
+                  border: 1px solid #f2f2f2;
+                  border-top:none;
+                  thead{
+                    tr{
+                      th{
+                        font-weight: 300;
+                        padding: 20px 0;
+                        font-size: .8em;
+                      }
+                    }
+                  }
+                  tbody{
+                    tr{
+                      td{
+                        a{
+                          padding: 0.7em;
+                        }
+                        .ui-state-default{
+                          text-align: center;
+                          border-radius: 5px;
+                          &:hover{
+                            /*color:$CalenderColor ;*/
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .ui-widget-header,.ui-widget-content{
+                border: none;
+              }
+              .ui-corner-all{
+                border-bottom-right-radius:0;
+                border-bottom-left-radius:0;
+                border-top-right-radius:0;
+                border-top-left-radius:0;
+
+              }
+              .ui-state-default,
+              .ui-widget-content .ui-state-default{
+                border-color: transparent;
+                background-color: transparent;
+                color: black;
+              }
+              .ui-state-hover,
+              .ui-widget-content .ui-state-hover{
+                border-color: transparent;
+                background-color:transparent;
+                color: $CalenderColor;
+              }
+              .ui-state-highlight,
+              .ui-widget-content .ui-state-highlight,
+              .ui-state-active,
+              .ui-widget-content .ui-state-active{
+                background-color:$CalenderColor;
+                border-color: transparent;
+                color:white;
+              }
+            }
+            .calender_details{
+              width: 60%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              .calender_item{
+                width: 48%;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+                span{
+                  color: $FirstColor;
+                  font-size: 13px;
+                  font-weight: 400;
+                }
+                h4{
+                  font-size: 17px;
+                  font-weight: 600;
+                  margin: 15px 0 0 0;
+                  a{
+                    color: black;
+                    @include transition(0.5);
+                  }
+                  &:hover{
+                    a{
+                      color: $SecondColor;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*******Count*********/
+.count{
+  @include background("counter.jpg","",360);
+  .count_opacity{
+    background-color: rgba(19,36,71,0.8);
+    min-height: 360px;
+    .container{
+      .count_data{
+        display: flex;
+        padding-top: 110px;
+        .item{
+          text-align: center;
+          flex: 1;
+          span{
+            color: white;
+            font-size: 45px;
+            font-weight: 600;
+          }
+          p{
+            color: #aaaaaa;
+            font-size: 27px;
+            font-weight: 600;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+/******contact**********/
+.contact{
+  .container{
+    .contact_info{
+      display: flex;
+      justify-content: space-between;
+      .map{
+        width: 55%;
+      }
+      .subscribe{
+        width: 40%;
+        h3{
+          font-size: 25px;
+          font-weight: 800;
+          margin-top: 5px ;
+        }
+        p{
+          color: #535353;
+          font-size: 15px;
+          padding-right: 50px;
+          line-height: 1.5em;
+          margin-bottom: 40px;
+        }
+        form{
+          input{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 17px 0 17px 20px;
+            margin: 10px auto;
+            border: 1px solid #F6F6F6;
+            border-radius:3px ;
+            font-size: 12px;
+            background-color: #fdfdfd;
+            @include Placeholder(#434f77);
+          }
+          .SubscribeButton{
+            background-color: $SecondColor;
+            color: black;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            @include transition(0.5);
+            &:hover{
+              @extend .Hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/**********Media******************************/
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /****Slider*********/
+  .slider{
+    #owl-demo {
+      .item{
+        div{
+          .slider_content{
+            width: 55%;
+            top: 45%;
+          }
+        }
+      }
+    }
+  }
+  /********News*******/
+  .news{
+    .container{
+      .news_content{
+        .left{
+          .Graduate{
+            .Graduate_item{
+              margin: 10px 0 0 0;
+              p{
+                font-size: 12px;
+                padding: 0 0 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /****Slider*********/
+  .slider{
+    #owl-demo {
+      .item{
+        div{
+          .slider_content{
+            width: 55%;
+            top: 45%;
+          }
+        }
+      }
+    }
+  }
+  /********News*******/
+  .news {
+    .container {
+      .news_content {
+        .left {
+          h2 {
+            font-size: 25px;
+          }
+          .Graduate {
+            .Graduate_item {
+              margin: 10px 0 0 0;
+              .Graduate_person {
+                .Graduate_overlay {
+                  height:75px;
+                }
+                img {
+                  max-width: 75px;
+                  min-height: 75px;
+                }
+              }
+              p {
+                font-size: 10px;
+                padding: 0 0 0 10px;
+              }
+            }
+          }
+        }
+        .right {
+          .right_content {
+            .right_item {
+              width: 48%;
+            }
+          }
+          .right_Events {
+            h2 {
+              font-size: 25px;
+            }
+            .Events {
+              .calender {
+                width: 100%;/*SH*/
+              }
+              .calender_details {
+                width: 100%; /*SH*/
+                display: block;/*SH*/
+
+                .calender_item {
+                  width: 100%;/*SH*/
+                  margin-bottom: 20px;/*SH*/
+                  span {
+                    font-size: 12px;
+                  }
+                  h4 {
+                    font-size: 15px;
+                    margin: 5px 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*small_Tablet*/
+@media (min-width: 551px) and (max-width: 767px) {
+  /****Slider*********/
+  .slider{
+    #owl-demo {
+      .item{
+        div{
+          .slider_content{
+            width: 50%;
+            top: 45%;
+            left:20%;
+            h2{
+              font-size: 25px;
+              padding-right: 0;
+            }
+            p{
+              font-size: 15px;
+            }
+            .Read{
+              a{
+                p{
+                  font-size: 12px;
+                }
+                svg{
+                  width: 25px;
+                  height: 28px;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+  /*******About*******/
+  .about{
+    .container{
+      .left{
+        h2{
+          font-size: 25px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  /********News*******/
+  .news {
+    .container {
+      .news_content {
+        .left {
+          flex: 0.8;
+          h2 {
+            font-size: 25px;
+          }
+          .Graduate {
+            .Graduate_item {
+              margin: 10px 0 0 0;
+              .Graduate_person {
+                .Graduate_overlay {
+                  height:75px;
+                }
+                img {
+                  max-width: 75px;
+                  min-height: 75px;
+                }
+              }
+              p {
+                font-size: 10px;
+                padding: 0 0 0 10px;
+              }
+            }
+          }
+        }
+        .right {
+          .right_content {
+            .right_item {
+              width: 48%;
+              .right_thumb{
+                padding: 10px;
+                h3{
+                  font-size: 14px;
+                }
+                p{
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+          .right_Events {
+            h2 {
+              font-size: 25px;
+            }
+            .Events {
+              display: block;
+              .calender {
+                width: 95%;
+                height: 310px;
+              }
+              .calender_details {
+                width: 100%; /*SH*/
+                display: block;/*SH*/
+
+                .calender_item {
+                  width: 100%;/*SH*/
+                  margin-bottom: 20px;/*SH*/
+                  span {
+                    font-size: 12px;
+                  }
+                  h4 {
+                    font-size: 15px;
+                    margin: 5px 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  /*******Count*******/
+  .count{
+    .count_opacity{
+      .container{
+        .count_data{
+          .item{
+            span{
+              font-size: 40px;
+            }
+            p{
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /******contact******/
+  .contact{
+    .container{
+      .contact_info{
+        .map{
+          width: 45%;
+        }
+        .subscribe{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+

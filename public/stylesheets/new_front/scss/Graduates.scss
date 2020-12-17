@@ -1,0 +1,88 @@
+
+.Graduates{
+  .Common_content{
+    display: flex;
+    .left{
+      @extend .CommonBar;
+    }
+    .right{
+      flex: 3;
+      box-sizing: border-box;
+      padding-left: 20px;
+      h2{
+        font-size: 35px;
+        margin-top: 0;
+      }
+      .Lib_content{
+        width: 100%;
+        margin: 50px auto;
+        .Lib_item{
+          display: flex;
+          padding: 20px 0;
+          align-items: center;
+          p{
+            width: 20%;
+            font-weight: 600;
+          }
+
+          input, select {
+            box-sizing: border-box;
+            outline: 0;
+            width: 50%;
+            outline: none;
+            display: block;
+            height: 35px;
+            padding-left: 10px;
+            margin-right: 10px;
+            border: 1px solid #eee;
+            border-radius:3px ;
+            @include transition(0.5);
+            &:focus,&:active{
+              border-color: $SecondColor;
+            }
+          }
+          input[type="submit"]{
+            width: 15%;
+            background-color: $FirstColor;
+            text-align: center;
+            padding-left: 0;
+            margin-right: 0;
+            cursor: pointer;
+            &:focus,&:active{
+              border-color: black;
+              background-color: black;
+              color: white;
+            }
+          }
+        }
+      }
+      .Graduate_Students{
+        margin: 50px auto;
+        h4{
+          font-size: 18px;
+          font-weight: 600;
+          color: black;
+        }
+        table {
+          border-collapse: collapse;
+          box-sizing: border-box;
+          width: 100%;
+          margin: 20px auto;
+          color: #818181;
+          th {
+            background-color: $FirstColor;
+            color: white;
+            text-align: left;
+          }
+          tr,td{
+            border: 1px solid #ddd;
+          }
+          th, td {
+            padding: 15px;
+          }
+        }
+      }
+
+    }
+  }
+}

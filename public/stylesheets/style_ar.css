@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import url("theme_ar/bootstrap.min.css");
+@import url("theme_ar/font-awesome.css");
+@import url("theme_ar/icomoon.css");
+@import url("theme_ar/rev-settings.css");
+@import url("theme_ar/swiper.min.css");
+@import url("theme_ar/slider.css");
+@import url("theme_ar/animate.css");
+@import url("theme_ar/switcher.css");
+@import url("theme_ar/styles-4.css");
+@import url("theme_ar/owl.carousel.css");
+@import url("theme_ar/default.css");
+@import url("theme_ar/styles-4.css");
+
+ 
+
+/* @import url("animate.css"); */
+@import url("hover.css");
+@import url("layerslider.css");
+ /* @import url("theme_ar/style_pages.css"); */
+@import url("prettyPhoto.css");
+
+html{ direction: rtl !important;}
+.midpart{ margin:auto auto;}
+.top_part{width:100%; margin:auto auto; clear:both}
+.left_part{float:right;}
+.middle_part{}
+.right_part{float:left;min-width:auto;}
+.bottom{ clear:both;width:100%;}
+/*search*/
+.searchbox{ margin-right:15px;}
+.searchbox .title a{line-height:30px; font-size:19px; color:#333; text-decoration:none;}
+.searchbox .title a:hover{color: #000; text-decoration: underline;}
+.searchbox .link{ font-size:11px; color: #090; font-style:italic;}
+.searchbox .desc{ font-size:11px; color: #999; margin:0 0 20px 0;}
+.part{ line-height:30px !important;  text-align: justify;}
+/*newsletter*/
+#newsletter_result{ position:absolute; top:0; min-width:250px; height:30px; background:#eee url(../images/close.png) left top no-repeat ; border:#093 dashed 1px; display:none; padding:7px 7px 0 27px; cursor:pointer; z-index:3000;}
+.lang{text-align: left;}
+.powered{text-align: left; direction: ltr;}
+.red{  color: #e33000;}
+.contactphone{ direction: ltr !important;}
+#contactus ul ,.pagination ul{list-style: none !important;}
+.message {width: 400px; border: 1px dashed;    margin: 10px 0px;    padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;    background-position: 10px center;
+  color: #9F6000;    background-color: #FEEFB3;    background-image: url('../back_images/message.png');clear: both;
+}
+
+.user-menu{right:0 !important; left:auto !important;margin-top: 15px;}
+.user-menu li{padding: 0;    width: 100%;    padding: 5px 0;font-size: 14px;}
+.user-menu li a:hover{color: #315b4d !important; font-size: 14px;}

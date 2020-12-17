@@ -1,0 +1,31 @@
+.portjb-wrapper{
+    box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box; margin:10px 0px 10px 10px;
+    font-family: 'DroidKufi-Regular' !important; 
+}
+
+.portjb-view {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+.portjb-view .mask,.portjb-view .content {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.portjb-view img {
+    display: block;
+    position: relative;
+}
+.portjb-view h2 {
+    position: relative;
+}
+.portjb-view p {
+    position: relative;
+}
+.portjb-view a.info {
+    display: inline-block;
+    text-decoration: none;
+}
